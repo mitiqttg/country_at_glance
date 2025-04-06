@@ -25,5 +25,5 @@ const getWeatherCountryCapital = async (lat, lon, apiKey) => {
 }
 
 export default { 
-  getAll, getCountry, getWeatherCountryCapital, getLocationCountryCapital, getCountryInformation
+  getAll, getCountry, getWeatherCountryCapital, getLocationCountryCapital
 }
