@@ -1,25 +1,80 @@
-# React + Vite
-API used is from https://openweathermap.org. To obtain API key, you can create an account, and go to `My API keys` or (https://home.openweathermap.org/api_keys) and copy one active key. It might take some minutes until a generated API key is valid.
+# 🌍 Country App (React + Vite)
 
-How to run locally: 
-- Open Integrated Terminal at folder part2.18_2.20
-- Run  `npm install`
-- Run  `npm install axios`
-- Run  `npm install json-server --save-dev`
-- Run `npm run server`
-- Open/split another Integrated Terminal at folder part2.18_2.20
-  
+This project is built with **React + Vite** and uses the [OpenWeatherMap API](https://openweathermap.org) to fetch weather data.  
+To run it locally, you’ll need an API key from OpenWeatherMap.
 
-- NB: Use an environment variable to save the key. Assuming your API key is `aa26841n3n4v41m34rv0`, you can set it by:
-    ```
-    export VITE_SOME_KEY=aa26841n3n4v41m34rv0 && npm run dev // For Linux/macOS Bash
-    ($env:VITE_SOME_KEY="5f35b0af8dff8a1146f933d450039052
-") -and (npm run dev) // For Windows PowerShell
-    set "VITE_SOME_KEY=5f35b0af8dff8a1146f933d450039052" && npm run dev // For Windows cmd.exe
-    ```
-    Or alternatively, create a new file in the root of the folder name `.env`, put `VITE_SOME_KEY=aa26841n3n4v41m34rv0` there
-- Finally run `npm run dev` and go to your localhost
+---
 
-- Result
-<img src=".\public\countryApp.gif" width="800" height="300">
-[![Watch the video](.\public\countryapp.png)](.\public\countryglance.mp4)
+## 🔑 Getting an API Key
+1. Create a free account at [OpenWeatherMap](https://openweathermap.org).
+2. Go to [My API Keys](https://home.openweathermap.org/api_keys).
+3. Copy one of your active keys.  
+   > ⏳ Note: A newly generated API key may take a few minutes to become active.
+
+---
+
+## ⚙️ Running Locally
+
+1. Open the integrated terminal in the project folder:  
+   `part2.18_2.20`
+2. Install dependencies:
+   ```bash
+   npm install
+   npm install axios
+   npm install json-server --save-dev
+   ```
+3. Start the mock server:
+   ```bash
+   npm run server
+   ```
+4. Open another terminal (split or new) in the same folder.
+
+---
+
+## 🌐 Setting the API Key
+
+You can provide your API key via an **environment variable** or a `.env` file.
+
+### Option 1: Environment Variable
+Replace `YOUR_API_KEY_HERE` with your actual key:
+
+**Linux/macOS (Bash):**
+```bash
+export VITE_SOME_KEY=YOUR_API_KEY_HERE && npm run dev
+```
+
+**Windows (PowerShell):**
+```powershell
+($env:VITE_SOME_KEY="YOUR_API_KEY_HERE") -and (npm run dev)
+```
+
+**Windows (cmd.exe):**
+```cmd
+set "VITE_SOME_KEY=YOUR_API_KEY_HERE" && npm run dev
+```
+
+### Option 2: `.env` File
+Create a `.env` file in the project root and add:
+```
+VITE_SOME_KEY=YOUR_API_KEY_HERE
+```
+
+Then simply run:
+```bash
+npm run dev
+```
+
+---
+
+## 🚀 Usage
+Once the app is running, open your browser and go to:  
+👉 [http://localhost:5173](http://localhost:5173) (or the port shown in your terminal)
+
+---
+
+## 🎥 Demo
+Result preview:
+
+<img src="./public/countryApp.gif" width="800" height="600" alt="App Demo">
+
+[![Watch the video](./public/countryapp.png)](./public/countryglance.mp4)
